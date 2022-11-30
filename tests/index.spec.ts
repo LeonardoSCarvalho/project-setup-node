@@ -2,5 +2,5 @@ import Person from "@/index"
 
 it("should sum two numbers", () => {
   const person = new Person()
-  expect(person.sayMyName()).toBe("leo")
+  expect(person.sayMyName()).toBe("ola")
 })
