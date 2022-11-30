@@ -1,9 +1,10 @@
-import server from "@/server"
+import * as express from "express"
+import { Request, Response } from "express"
+const app = express()
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World!")
+})
 
-class Person {
-  sayMyName() {
-    return server
-  }
-}
-
-export default Person
+app.listen(3000, () => {
+  console.log("Server started on port 3000")
+})
