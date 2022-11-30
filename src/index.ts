@@ -1,6 +1,8 @@
+import server from "@/server"
+
 class Person {
   sayMyName() {
-    return "leo"
+    return server
   }
 }
 
